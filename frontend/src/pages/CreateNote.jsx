@@ -46,13 +46,13 @@ const CreateNote = () => {
         </div>
       </Link>
 
-      <div className="h-80 flex items-center justify-center">
-        <div className="card w-2xl bg-yellow-900 border-4">
+      <div className="h-90 flex items-center justify-center">
+        <div className="card w-90 border-4">
           <div className="card-body">
             <form onSubmit={handleSubmit}>
               <h1 className="card-title">Note</h1>
               <textarea 
-                className="w-xl"
+                className="w-75"
                 placeholder="title" 
                 value={title} 
                 onChange={(a)=>{
@@ -60,7 +60,7 @@ const CreateNote = () => {
               }}/>
               <br />
               <textarea 
-                className="w-xl"
+                className="w-75"
                 placeholder="Body" 
                 value={body} 
                 onChange={(a)=>{
