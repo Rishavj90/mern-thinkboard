@@ -34,7 +34,7 @@ const NoteDetail = () => {
   }
 
   return (
-    <div>
+    <div className="h-full">
 
       <div className="m-5">
         <Link to="/">

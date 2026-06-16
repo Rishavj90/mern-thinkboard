@@ -46,21 +46,21 @@ const CreateNote = () => {
         </div>
       </Link>
 
-      <div className="h-90 flex items-center justify-center">
-        <div className="card w-90 border-4">
+      <div className="h-full flex items-center justify-center">
+        <div className="card w-90 border-2">
           <div className="card-body">
             <form onSubmit={handleSubmit}>
               <h1 className="card-title">Note</h1>
               <textarea 
-                className="w-75"
+                className="textarea"
                 placeholder="title" 
                 value={title} 
                 onChange={(a)=>{
                   return setTitle(a.target.value)
               }}/>
-              <br />
+
               <textarea 
-                className="w-75"
+                className="textarea"
                 placeholder="Body" 
                 value={body} 
                 onChange={(a)=>{
